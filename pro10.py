@@ -7,8 +7,9 @@ def deal_card():
     return card
 
 def calculation_score(cards):
-    # if sum(cards) ==21 and len(cards) ==21:
-    #     return 0
+    if sum(cards) == 21 and len(cards) ==2:
+        return 0
+    
     if 11 in cards and sum(cards) > 21:
         cards.remove(11)
         cards.append(1)
